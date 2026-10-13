@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <h1>Basic Calculator</h1>
+        <div class="subtitle">Enter your numbers and choose an operation formula</div>
+
+        <!-- Numeric Data Entries -->
+        <div class="input-section">
+            <input type="number" id="number1" placeholder="First number">
+            <input type="number" id="number2" placeholder="Second number">
+        </div>
+
+        <!-- Interaction Matrix Grid Row -->
+        <div class="buttons-grid">
+            <button class="btn-add" onclick="calculate('add')">+</button>
+            <button class="btn-subtract" onclick="calculate('subtract')">−</button>
+            <button class="btn-multiply" onclick="calculate('multiply')">×</button>
+            <button class="btn-divide" onclick="calculate('divide')">÷</button>
+        </div>
+
+        <!-- Render Target Workspace -->
+        <div class="result-card">
+            <div id="result">Waiting for values...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
